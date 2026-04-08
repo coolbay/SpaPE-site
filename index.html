@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpaPE Results</title>
+  <link rel="stylesheet" href="styles.css?v=20260408-1" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <h1 class="title">SpaPE: Spatial Positional Encodings for Spatially Aware Video Generation</h1>
+      <p class="intro">
+        SpaPE achieves higher camera pose accuracy than relevant baselines, including
+        token-level camera-pose-conditioned video generation approaches, while maintaining
+        the high image quality and diversity of the pretrained base model. In the following, we demonstrates the generated videos of our SpaPE compared with the baseline methods for both normal and reverse camera trajectories. 
+    </header>
+
+    <section class="results-section" aria-labelledby="normal-heading">
+      <div class="section-head">
+        <h2 id="normal-heading">Generated videos given normal camera trajectories</h2>
+      </div>
+      <div id="normal-grid" class="video-grid"></div>
+    </section>
+
+    <section class="results-section" aria-labelledby="reverse-heading">
+      <div class="section-head">
+        <h2 id="reverse-heading">Generated videos given normal camera trajectories (above) and revisited views given reverse camera trajectories (below)</h2>
+      </div>
+      <div id="reverse-grid" class="video-grid"></div>
+    </section>
+  </main>
+
+  <script src="videos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
