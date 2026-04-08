@@ -3,3 +3,5 @@
 *.swift*.mp4
 *.swift*.mp4
 *.swift
+normal/*
+reverse/*
